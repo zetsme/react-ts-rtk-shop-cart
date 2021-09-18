@@ -21,7 +21,7 @@ const cartSlice = createSlice({
         state.items[id] = 1;
       }
     },
-    removeFromCart: (state, action: PayloadAction<number>) => {
+    removeFromCart: (state, action: PayloadAction<string>) => {
       delete state.items[action.payload];
     },
     updateQuantity: (state, action: PayloadAction<{ id: string; quantity: number }>) => {

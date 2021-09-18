@@ -52,7 +52,7 @@ const CartPage: React.FC = () => {
                 </TableCell>
                 <TableCell>${products[id].price}</TableCell>
                 <TableCell>
-                  <Button onClick={() => dispatch(removeFromCart(Number(id)))}>
+                  <Button onClick={() => dispatch(removeFromCart(id))}>
                     <Delete color='secondary' />
                   </Button>
                 </TableCell>
